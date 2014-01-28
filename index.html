@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nirbhaya | Home</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/index.css"/>
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo1" src="img/logo.png" alt="" width="210" height="55"/></a>
+            <div id="contain">
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div style="width: 140px;" class="nav">
+                    <ul>
+                        <li style="width: 120px;"><a href="news.html">Photo Gallery</a></li>
+                        <li style="width: 120px;"><a href="program.html">Programs</a></li>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="body"></div>
+        <div id="quotes">
+            <h3 id="quote">“The thing women have yet to learn is nobody
+                gives you power. You just take it.”<br/><br/>
+                ~Roseanne Barr</h3>
+            <script>
+                var x = document.getElementById("quote");
+                var j = 0;
+                var z = 1;
+                var quotes = new Array("\“The thing women have yet to learn is nobody gives you power. You just take it.\”<br/><br/> ~Roseanne Barr",
+                        "\"Courage is like a muscle. We strengthen it with use.\"<br/><br/>~Ruth Gordon",
+                        "\"A woman is the full circle. Within her is the power to create, nurture and transform.\"<br/><br/> ~Diane Mariechild",
+                        "\“Remember, no one can make you feel inferior without your consent.\”<br/><br/> ~Eleanor Roosevelt",
+                        "\“There is a growing strength in women but it’s in the forehead, not the forearm.\” <br/><br/> ~Beverly Sills",
+                        "\“Men are taught to apologize for their weaknesses, women for their strengths.\”<br/><br/> ~Lois Wyse",
+                        "\“Never underestimate the power of a woman.\”<br/><br/> ~Nellie McClung",
+                        "\“A woman is like a tea bag: you cannot tell how strong she is until you put her in hot water.\” <br/><br/> ~Nancy Reagan",
+                        "You are a child of god. Your playing small doesn’t serve the world. There’s nothing enlightened about shrinking so that other people won’t feel insecure around you.");
+                function changeQuotes() {
+                    j++;
+                    if (j > 8)
+                        j = 0;
+                    x.innerHTML = quotes[j];
+                }
+                setInterval(changeQuotes, 4000);
+            </script>
+            <p id="data">Women Empowerment in India is a challenging task as we need to acknowledge the fact
+                that gender based discrimination is deep rooted social malice practiced in India 
+                since thousands of years. Our organization <strong><i>Nirbhaya</i></strong> is trying hard to
+                eradicate this social discrimination based on gender and give Women equal status.</p>
+        </div>
+        <aside>
+            <img id="slideshow" src="img/front/1.jpg" alt="Women Empowerment" height="335" width="500"/>
+            <script type="text/javascript">
+                var i = 1;
+                function changeImage() {
+                    i++;
+                    if (i > 4)
+                        i = 1;
+                    var img = document.getElementById('slideshow');
+                    img.src = 'img/front/' + i + '.jpg';
+                }
+                setInterval(changeImage, 2000);
+            </script>
+        </aside>
+        <footer> <a href="http://facebook.com" class="links">
+            <span class="icon-facebook" data-icon="&#xe005;"> </span>
+           </a>
+           <a href="http://twitter.com" class="links">
+            <span class="icon-twitter" data-icon="&#xe003;"> </span>
+            </a>
+            <a href="http://plus.google.com" class="links">
+             <span class="icon-google-plus" data-icon="&#xe000;"> </span>
+            </a>
+            <a href="#" class="links">
+             <span class="icon-feed" data-icon="&#xe006;"> </span>
+            </a>
+            <a href="contact.html" class="navbar">Contact Us</a>
+            <a href="blog.html" class="navbar">Blog</a>
+            <a href="program.html" class="navbar">Programs</a>
+            <a href="news.html" class="navbar">Photo Gallery</a>           
+            <a href="about.html" class="navbar">About</a>
+            <a href="index.html" class="navbar">Home</a>
+
+        </footer>
+        <!--<label id="rit">&copy; Nirbhaya 2013</label>-->
+    </body>
+</html>
